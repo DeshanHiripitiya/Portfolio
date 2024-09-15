@@ -4,7 +4,10 @@ import { Contactinfo } from '../card/Contactinfo';
 
 export function Contact() {
   return (
-    <section className='px-8 py-8 lg:py-16 bg-gradient-to-r from-[rgba(255,245,0,0.1)0%] via-[rgba(111,244,75,0.1)68%] to-[rgba(0,255,133,0.1)100%] py-12 mt-36'>
+    <section
+      id='contact'
+      className='px-8 py-8 lg:py-16 bg-gradient-to-r from-[rgba(255,245,0,0.1)0%] via-[rgba(111,244,75,0.1)68%] to-[rgba(0,255,133,0.1)100%] py-12 mt-36'
+    >
       <div className='container mx-auto text-center font-poppins'>
         <Typography className='text-xl font-semibold text-[#0E4DA4] uppercase'>
           contact me
@@ -28,10 +31,7 @@ export function Contact() {
             className='w-full h-full lg:max-h-[510px]'
           /> */}
           <Contactinfo />
-          <form
-            action='#'
-            className='flex flex-col gap-4 lg:max-w-sm'
-          >
+          <form action='#' className='flex flex-col gap-4 lg:max-w-sm'>
             {/* <Typography
               variant='small'
               className='text-left !font-semibold !text-gray-600'

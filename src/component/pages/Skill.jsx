@@ -3,7 +3,7 @@ import Technologies from '../other/Technologies';
 
 function Skill() {
   return (
-    <div className='py-12 mt-36 '>
+    <div id='skills' className='py-12 mt-36 '>
       <div className='flex flex-col items-center justify-center font-poppins'>
         <p className='text-xl font-semibold text-[#0E4DA4] uppercase'>
           what i know
