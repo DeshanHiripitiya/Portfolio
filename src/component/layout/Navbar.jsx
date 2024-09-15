@@ -4,7 +4,7 @@ import {
   faInstagram,
   faLinkedinIn,
 } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, } from '@fortawesome/free-solid-svg-icons';
 
 import {
   Navbar,
@@ -23,7 +23,7 @@ function NavList() {
           as='li'
           variant='small'
           color='blue-gray'
-          className='p-1 font-medium font-poppins text-lg font-semibold'
+          className='p-1 font-medium font-poppins text-base font-semibold'
         >
           <a
             href='#'
@@ -59,7 +59,7 @@ export function NavbarSimple() {
           <img
             src={require('../../assests/logo.png')}
             alt='Logo'
-            className='h-14'
+            className='h-12'
           />
         </div>
         {/* Nav Links */}
@@ -83,36 +83,36 @@ export function NavbarSimple() {
           <div>
             <FontAwesomeIcon
               icon={faInstagram}
-              size='xl'
+              size='sm'
               style={{
                 color: '#000000',
                 borderRadius: '50%',
                 border: '2px solid #000000',
-                padding: '4px',
+                padding: '5px',
               }}
             />
           </div>
           <div>
             <FontAwesomeIcon
               icon={faLinkedinIn}
-              size='xl'
+              size='sm'
               style={{
                 color: '#000000',
                 borderRadius: '50%',
                 border: '2px solid #000000',
-                padding: '4px',
+                padding: '5px',
               }}
             />
           </div>
           <div>
             <FontAwesomeIcon
               icon={faEnvelope}
-              size='xl'
+              size='sm'
               style={{
                 color: '#000000',
                 borderRadius: '50%',
                 border: '2px solid #000000',
-                padding: '4px',
+                padding: '5px',
               }}
             />
           </div>

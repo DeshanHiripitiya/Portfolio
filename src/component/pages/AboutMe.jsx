@@ -3,8 +3,8 @@ import React from 'react'
 function AboutMe() {
     
   return (
-    <div className=''>
-      <div className='flex flex-col items-center justify-center my-52'>
+    <div className='py-12 mt-36'>
+      <div className='flex flex-col items-center justify-center'>
         <div className='font-poppins text-4xl font-semibold text-[#010035] '>
           A Little Bit About Me
         </div>

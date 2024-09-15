@@ -31,9 +31,9 @@ export function Sms() {
           night life in Barcelona.
         </Typography>
       </CardBody>
-      <CardFooter className='pt-0'>
+      {/* <CardFooter className='pt-0'>
         <Button className='font-poppins'>Read More</Button>
-      </CardFooter>
+      </CardFooter> */}
     </Card>
   );
 }

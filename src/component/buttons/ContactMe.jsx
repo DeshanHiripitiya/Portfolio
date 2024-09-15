@@ -2,7 +2,7 @@ import { Button } from '@material-tailwind/react';
 
 export function ContactMeButton() {
 
-const font = 'normal-case text-xl font-poppins font-light px-10';
+const font = 'normal-case text-lg font-poppins font-light px-10 py-2';
 
   return (
     <div className='flex items-center gap-8'>
