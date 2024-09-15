@@ -1,12 +1,12 @@
 import React from 'react';
-import Navbar, { ButtonDefault, NavbarSimple, NavbarWithMegaMenu } from './component/layout/Navbar';
-import { Button } from '@material-tailwind/react';
+import Navbar, { NavbarSimple } from './component/layout/Navbar';
 import Top from './component/pages/Top';
 import AboutMe from './component/pages/AboutMe';
 import Projects from './component/pages/Projects';
 import Services from './component/pages/Services';
 import Skill from './component/pages/Skill';
 import Contact from './component/pages/Contact';
+import Footer from './component/pages/Footer';
 
 
 // border border-solid border-black
@@ -22,6 +22,7 @@ function App() {
         <Services />
         <Skill />
         <Contact />
+        <Footer />
     </>
   );
 }

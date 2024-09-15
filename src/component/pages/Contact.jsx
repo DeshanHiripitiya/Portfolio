@@ -1,19 +1,137 @@
-import React from 'react'
+import React from 'react';
+import { Button, Input, Textarea, Typography } from '@material-tailwind/react';
+import { Contactinfo } from '../card/Contactinfo';
 
-function Contact() {
+export function Contact() {
   return (
-    <div className='py-12 mt-36 bg-gradient-to-r from-[rgba(255,245,0,0.1)0%] via-[rgba(111,244,75,0.1)68%] to-[rgba(0,255,133,0.1)100%] '>
-      <div className='flex flex-col items-center justify-center font-poppins'>
-        <div className='text-xl font-semibold text-[#0E4DA4] uppercase'>
+    <section className='px-8 py-8 lg:py-16 bg-gradient-to-r from-[rgba(255,245,0,0.1)0%] via-[rgba(111,244,75,0.1)68%] to-[rgba(0,255,133,0.1)100%] py-12 mt-36'>
+      <div className='container mx-auto text-center font-poppins'>
+        <Typography className='text-xl font-semibold text-[#0E4DA4] uppercase'>
           contact me
-        </div>
-        <div className='text-4xl font-bold text-[#222222] mt-12'>
+        </Typography>
+        <Typography
+          variant='h1'
+          color='blue-gray'
+          className='text-4xl font-bold text-[#222222] mt-12'
+        >
           Have a Project Idea ? Let’s Talk
+        </Typography>
+        <Typography className='lg:mb-20 mx-auto max-w-3xl !text-gray-500 mt-3'>
+          Whether it&apos;s a question about our services, a request for
+          technical assistance, or suggestions for improvement, our team is
+          eager to hear from you.
+        </Typography>
+        <div className='grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start'>
+          {/* <img
+            src='/image/map.svg'
+            alt='map'
+            className='w-full h-full lg:max-h-[510px]'
+          /> */}
+          <Contactinfo />
+          <form
+            action='#'
+            className='flex flex-col gap-4 lg:max-w-sm'
+          >
+            {/* <Typography
+              variant='small'
+              className='text-left !font-semibold !text-gray-600'
+            >
+              Contact Me
+            </Typography> */}
+            <div className='grid grid-cols-2 gap-4'>
+              <div>
+                <Typography
+                  variant='small'
+                  className='mb-2 text-left font-medium !text-gray-900'
+                >
+                  First Name
+                </Typography>
+                <Input
+                  color='gray'
+                  size='lg'
+                  placeholder='First Name'
+                  name='first-name'
+                  className='focus:border-t-gray-900'
+                  containerProps={{
+                    className: '!min-w-full',
+                  }}
+                  labelProps={{
+                    className: 'hidden',
+                  }}
+                />
+              </div>
+              <div>
+                <Typography
+                  variant='small'
+                  className='mb-2 text-left font-medium !text-gray-900'
+                >
+                  Last Name
+                </Typography>
+                <Input
+                  color='gray'
+                  size='lg'
+                  placeholder='Last Name'
+                  name='last-name'
+                  className='focus:border-t-gray-900'
+                  containerProps={{
+                    className: '!min-w-full',
+                  }}
+                  labelProps={{
+                    className: 'hidden',
+                  }}
+                />
+              </div>
+            </div>
+            <div>
+              <Typography
+                variant='small'
+                className='mb-2 text-left font-medium !text-gray-900'
+              >
+                Your Email
+              </Typography>
+              <Input
+                color='gray'
+                size='lg'
+                placeholder='name@email.com'
+                name='email'
+                className='focus:border-t-gray-900'
+                containerProps={{
+                  className: '!min-w-full',
+                }}
+                labelProps={{
+                  className: 'hidden',
+                }}
+              />
+            </div>
+            <div>
+              <Typography
+                variant='small'
+                className='mb-2 text-left font-medium !text-gray-900'
+              >
+                Your Message
+              </Typography>
+              <Textarea
+                rows={6}
+                color='gray'
+                placeholder='Message'
+                name='message'
+                className='focus:border-t-gray-900'
+                containerProps={{
+                  className: '!min-w-full',
+                }}
+                labelProps={{
+                  className: 'hidden',
+                }}
+              />
+            </div>
+            <Button className='w-full bg-[#0E4DA4]' color='gray'>
+              Send message
+            </Button>
+          </form>
         </div>
-        <div className='mt-14'>{/* <ProjectTabs /> */}</div>
       </div>
-    </div>
+    </section>
   );
 }
 
-export default Contact
+export default Contact;
