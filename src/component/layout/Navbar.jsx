@@ -80,7 +80,11 @@ export function NavbarSimple() {
           )}
         </IconButton>
         <div className='flex flex-row gap-3'>
-          <div>
+          <div
+            as='a'
+            href='#'
+            className='opacity-80 transition-opacity hover:opacity-100'
+          >
             <FontAwesomeIcon
               icon={faInstagram}
               size='sm'
@@ -92,7 +96,11 @@ export function NavbarSimple() {
               }}
             />
           </div>
-          <div>
+          <div
+            as='a'
+            href='#'
+            className='opacity-80 transition-opacity hover:opacity-100'
+          >
             <FontAwesomeIcon
               icon={faLinkedinIn}
               size='sm'
@@ -104,7 +112,11 @@ export function NavbarSimple() {
               }}
             />
           </div>
-          <div>
+          <div
+            as='a'
+            href='#'
+            className='opacity-80 transition-opacity hover:opacity-100'
+          >
             <FontAwesomeIcon
               icon={faEnvelope}
               size='sm'
