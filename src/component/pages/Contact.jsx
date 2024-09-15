@@ -10,7 +10,7 @@ function Contact() {
         <div className='text-4xl font-bold text-[#222222] mt-12'>
           Have a Project Idea ? Let’s Talk
         </div>
-        <div className='mt-14'>{/* <ProjectTabs /> */}</div>
+        <div className='mt-14'><ProjectTabs /></div>
       </div>
     </div>
   );
