@@ -6,7 +6,10 @@ import { Design } from '../card/services/Design';
 
 function Services() {
   return (
-    <div className='bg-gradient-to-r from-[rgba(255,245,0,0.1)0%] via-[rgba(111,244,75,0.1)68%] to-[rgba(0,255,133,0.1)100%] py-12 mt-36'>
+    <div
+      id='services'
+      className='bg-gradient-to-r from-[rgba(255,245,0,0.1)0%] via-[rgba(111,244,75,0.1)68%] to-[rgba(0,255,133,0.1)100%] py-12 mt-36'
+    >
       <div className='flex flex-col items-center justify-center font-poppins'>
         <div className='flex flex-col items-center justify-center'>
           <p className='text-xl font-semibold text-[#0E4DA4]'>WHAT I PROVIDE</p>

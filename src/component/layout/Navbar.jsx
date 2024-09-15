@@ -15,21 +15,46 @@ import {
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 function NavList() {
+
+  const handleSmoothScroll = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    const offset = 80; // Adjust based on your navbar's height
+
+    if (section) {
+      const sectionTop = section.offsetTop - offset;
+      window.scrollTo({
+        top: sectionTop,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   return (
     <ul className='my-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6'>
-      {['Home', 'About', 'Portfolio', 'Blog', 'Contact'].map((item) => (
+      {[
+        { name: 'Home', id: 'top' },
+        { name: 'About', id: 'about' },
+        { name: 'Projects', id: 'projects' },
+        { name: 'Services', id: 'services' },
+        { name: 'Skills', id: 'skills' },
+        { name: 'Contact', id: 'contact' },
+      ].map((item) => (
         <Typography
-          key={item}
+          key={item.name}
           as='li'
           variant='small'
           color='blue-gray'
           className='p-1 font-medium font-poppins text-base font-semibold'
         >
           <a
-            href='#'
+            href={`#${item.id}`}
             className='flex items-center hover:text-[#0E4DA4] transition-colors'
+            onClick={(e) => {
+              e.preventDefault(); // Prevent the default anchor behavior
+              handleSmoothScroll(item.id); // Call smooth scroll function
+            }}
           >
-            {item}
+            {item.name}
           </a>
         </Typography>
       ))}
@@ -38,6 +63,14 @@ function NavList() {
 }
 
 export function NavbarSimple() {
+
+  const scrollToTop = () => {
+    const topSection = document.getElementById('top'); // Reference the top section by its ID
+    if (topSection) {
+      topSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const [openNav, setOpenNav] = React.useState(false);
 
   const handleWindowResize = () =>
@@ -59,7 +92,8 @@ export function NavbarSimple() {
           <img
             src={require('../../assests/logo.png')}
             alt='Logo'
-            className='h-12'
+            className='h-12 cursor-pointer'
+            onClick={scrollToTop}
           />
         </div>
         {/* Nav Links */}
