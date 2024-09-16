@@ -1,9 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, forwardRef } from 'react';
 import { Button, Input, Textarea, Typography } from '@material-tailwind/react';
 import { Contactinfo } from '../card/Contactinfo';
 import emailjs from '@emailjs/browser';
 
-export function Contact() {
+  const Contact = forwardRef((props, ref) => {
+  const contactRef = useRef(null);
   const form = useRef();
   const [loading, setLoading] = useState(false); // State for loading spinner
   const [success, setSuccess] = useState(false); // State for success message
@@ -37,6 +38,7 @@ export function Contact() {
   return (
     <section
       id='contact'
+      ref={ref}
       className='px-8 py-8 lg:py-16 bg-gradient-to-r from-[rgba(255,245,0,0.1)0%] via-[rgba(111,244,75,0.1)68%] to-[rgba(0,255,133,0.1)100%] py-12 mt-36'
     >
       <div className='container mx-auto text-center font-poppins'>
@@ -199,6 +201,6 @@ export function Contact() {
       </div>
     </section>
   );
-}
+})
 
 export default Contact;
