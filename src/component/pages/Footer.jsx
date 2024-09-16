@@ -12,6 +12,8 @@ function Footer() {
       >
         &copy; {currentYear} Nipuna Deshan. All Rights Reserved.
       </Typography>
+
+      {/* instragram */}
       <div className='flex gap-4 text-blue-gray-900 sm:justify-center'>
         <Typography
           as='a'
@@ -32,6 +34,7 @@ function Footer() {
           </svg>
         </Typography>
 
+{/* github */}
         <Typography
           as='a'
           href='#'
@@ -50,6 +53,8 @@ function Footer() {
             />
           </svg>
         </Typography>
+
+        {/* linkedin */}
         <Typography
           as='a'
           href='#'
@@ -69,9 +74,11 @@ function Footer() {
             />
           </svg>
         </Typography>
+
+        {/* Whatsapp */}
         <Typography
           as='a'
-          href='https://wa.me/0776552898'
+          href='https://wa.me/+94776552898'
           target='_blank'
           rel='noopener noreferrer'
           className='opacity-80 transition-opacity hover:opacity-100'

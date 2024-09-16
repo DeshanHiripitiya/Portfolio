@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faInstagram,
   faLinkedinIn,
+  faWhatsapp,
 } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, } from '@fortawesome/free-solid-svg-icons';
 
 import {
   Navbar,
@@ -15,7 +15,6 @@ import {
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 function NavList() {
-
   const handleSmoothScroll = (sectionId) => {
     const section = document.getElementById(sectionId);
     const offset = 80; // Adjust based on your navbar's height
@@ -48,11 +47,12 @@ function NavList() {
         >
           <a
             href={`#${item.id}`}
-            className='flex items-center hover:text-[#0E4DA4] transition-colors'
+            className={`flex items-center hover:text-[#0E4DA4] transition-colors`}
             onClick={(e) => {
               e.preventDefault(); // Prevent the default anchor behavior
               handleSmoothScroll(item.id); // Call smooth scroll function
             }}
+            data-section={item.id}
           >
             {item.name}
           </a>
@@ -113,55 +113,56 @@ export function NavbarSimple() {
             <Bars3Icon className='h-6 w-6' strokeWidth={2} />
           )}
         </IconButton>
-        <div className='flex flex-row gap-3'>
-          <div
-            as='a'
-            href='#'
-            className='opacity-80 transition-opacity hover:opacity-100'
+        <div className='flex flex-row gap-5'>
+          <a
+            href='https://www.instagram.com/nipuna__deshan/'
+            // as='a' //behave as a hyperlink
+            target='_blank' // Opens the link in a new tab
+            rel='noopener noreferrer' // Ensures security when opening new tabs
+            className='opacity-60 transition-opacity hover:opacity-100 cursor-pointer'
           >
             <FontAwesomeIcon
               icon={faInstagram}
-              size='sm'
+              size='lg'
               style={{
                 color: '#000000',
-                borderRadius: '50%',
-                border: '2px solid #000000',
-                padding: '5px',
+                // borderRadius: '50%',
+                // border: '2px solid #000000',
+                // padding: '5px',
               }}
             />
-          </div>
-          <div
-            as='a'
-            href='#'
-            className='opacity-80 transition-opacity hover:opacity-100'
+          </a>
+          <a
+            href='https://www.linkedin.com/in/nipuna-deshan-113a10285/'
+            as='a' //behave as a hyperlink
+            target='_blank' // Opens the link in a new tab
+            rel='noopener noreferrer' // Ensures security when opening new tabs
+            className='opacity-50 transition-opacity hover:opacity-100 cursor-pointer'
           >
+            {/* <FontAwesomeIcon
+              icon={faLinkedin}
+              size='lg'
+              style={{ color: '#000000' }}
+            /> */}
             <FontAwesomeIcon
               icon={faLinkedinIn}
-              size='sm'
-              style={{
-                color: '#000000',
-                borderRadius: '50%',
-                border: '2px solid #000000',
-                padding: '5px',
-              }}
+              size='lg'
+              style={{ color: '#000000' }}
             />
-          </div>
-          <div
+          </a>
+          <a
             as='a'
-            href='#'
-            className='opacity-80 transition-opacity hover:opacity-100'
+            href='https://wa.me/+94776552898'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='opacity-60 transition-opacity hover:opacity-100 cursor-pointer'
           >
             <FontAwesomeIcon
-              icon={faEnvelope}
-              size='sm'
-              style={{
-                color: '#000000',
-                borderRadius: '50%',
-                border: '2px solid #000000',
-                padding: '5px',
-              }}
+              icon={faWhatsapp}
+              size='lg'
+              style={{ color: '#000000' }}
             />
-          </div>
+          </a>
         </div>
       </div>
       {/* Mobile Menu */}
