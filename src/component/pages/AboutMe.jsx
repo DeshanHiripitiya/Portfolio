@@ -9,18 +9,17 @@ function AboutMe() {
           A Little Bit About Me
         </div>
         <div className='font-poppins text-xl font-normal mx-96 mt-12 text-justify'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-          ipsum, scelerisque proin consequat tristique tortor, amet nullam. Eu
-          purus blandit luctus faucibus justo venenatis a. Auctor vitae sed arcu
-          curabitur tincidunt nibh. Lacinia ornare magnis amet blandit nisl urna
-          tincidunt eget. Urna sed etiam auctor ut netus sed sed. Gravida
-          habitant eu gravida id neque, facilisis.
+          With a passion for discovery and collaboration, I approach every
+          project with dedication. My background at the University of Moratuwa’s
+          Faculty of Information Technology has equipped me with a diverse skill
+          set, including both frontend and backend technologies.
+          Whether tackling complex challenges or exploring new opportunities, I
+          am committed to continuous learning and growth.
           <br />
-          <br />
-          Neque lectus elit massa aenean turpis quam aliquet.Lorem ipsum dolor
-          sit amet, consectetur adipiscing elit. Quisque ipsum, scelerisque
-          proin consequat tristique tortor, amet nullam. Eu purus blandit luctus
-          faucibus justo venenatis a.{' '}
+          <br />I also enjoy sharing my knowledge to help others develop their
+          skills. My goal is to contribute effectively to dynamic teams and make
+          meaningful strides in my field, turning every project into an
+          innovation and success.
         </div>
         <div className='mt-14 pl-80'>
           <img

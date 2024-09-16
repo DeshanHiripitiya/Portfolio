@@ -6,7 +6,12 @@ import {
   TabPanel,
 } from '@material-tailwind/react';
 import React from 'react';
-import {Sms} from '../card/Sms'
+import {Sms} from '../card/projects/Sms'
+import {Smsui} from '../card/projects/uiux/Sms'
+import { DevConnector } from '../card/projects/DevConnector';
+import { WordQuest } from '../card/projects/Wordquest';
+import { Portfolio } from '../card/projects/Portfolio';
+import { Portfolioui } from '../card/projects/uiux/Portfolioui';
 
 export function ProjectTabs() {
   const [activeTab, setActiveTab] = React.useState('software');
@@ -17,34 +22,34 @@ export function ProjectTabs() {
       label: 'Software',
       value: 'software',
       component: (
-        <div className='flex space-x-4'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10'>
           <Sms />
-          <Sms />
+          <WordQuest />
+          <DevConnector />
+          <Portfolio />
         </div>
       ),
     },
     {
-      label: 'Softwdare',
-      value: 'softdware',
-      component: <Sms />,
+      label: 'UI/UX',
+      value: 'uiux',
+      component: (
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10'>
+          <Smsui />
+          <Portfolioui />
+          
+        </div>
+      ),
     },
     {
-      label: 'Vue',
-      value: 'vue',
+      label: 'Hardware',
+      value: 'hardware',
       component: (
-        <div>
-          <p>
-            We're not always in the position that we want to be at. We're
-            constantly growing. We're constantly making mistakes. We're
-            constantly trying to express ourselves and actualize our dreams.
-          </p>
-          <div className='mt-4'>
-            <input
-              type='text'
-              placeholder='Type something...'
-              className='px-4 py-2 border rounded'
-            />
-          </div>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10'>
+          <Smsui />
+          <WordQuest />
+          <DevConnector />
+          <Portfolio />
         </div>
       ),
     },
@@ -69,7 +74,7 @@ export function ProjectTabs() {
           </Tab>
         ))}
       </TabsHeader>
-      <TabsBody className='w-screen max-w-screen mx-auto flex justify-center items-center'>
+      <TabsBody className='mx-auto mt-10 flex justify-center items-center'>
         {' '}
         {data.map(({ value, component }) => (
           <TabPanel
