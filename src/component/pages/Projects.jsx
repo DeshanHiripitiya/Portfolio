@@ -1,9 +1,10 @@
-import React from 'react';
-import { ProjectTabs } from '../other/Tabs'
+import React, { forwardRef } from 'react';
+import { ProjectTabs } from '../other/Tabs';
 
-function Projects() {
+const Projects = forwardRef((props, ref) => {
+  
   return (
-    <div id='projects' className='py-12 mt-36'>
+    <div ref={ref} id='projects' className='py-12 mt-36'>
       <div className='flex flex-col items-center justify-center font-poppins'>
         <div className='text-xl font-semibold text-[#0E4DA4]'>MY PROJECTS</div>
         <div className='text-4xl font-bold text-[#222222] mt-12'>
@@ -15,6 +16,6 @@ function Projects() {
       </div>
     </div>
   );
-}
+})
 
 export default Projects;

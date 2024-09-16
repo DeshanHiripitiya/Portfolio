@@ -1,7 +1,7 @@
 import React from 'react';
 import { ContactMeButton } from '../buttons/ContactMe';
 
-function Top() {
+function Top({ projectsRef, contactRef }) {
   return (
     <div
       id='top'
@@ -22,14 +22,18 @@ function Top() {
               Full Stack Developer
             </p>
             <p className='font-normal font-poppins text-lg mt-6'>
-              I think curiosity is the cart to knowledge, and friendship<br /> makes
-              the journey easier, turning it into a shared adventure.
+              I think curiosity is the cart to knowledge, and friendship
+              <br /> makes the journey easier, turning it into a shared
+              adventure.
               {/* Driven by collaboration and growth, I innovate, adapt,
               <br /> and aim to make a positive impact. */}
             </p>
           </div>
           <div className='mt-16'>
-            <ContactMeButton />
+            <ContactMeButton
+              projectsRef={projectsRef}
+              contactRef={contactRef}
+            />
           </div>
         </div>
         <div className='flex items-center'>
