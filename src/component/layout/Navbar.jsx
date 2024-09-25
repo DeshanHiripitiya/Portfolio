@@ -1,11 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faInstagram,
-  faLinkedinIn,
-  faWhatsapp,
-} from '@fortawesome/free-brands-svg-icons';
-
 import {
   Navbar,
   Collapse,
@@ -13,6 +6,7 @@ import {
   IconButton,
 } from '@material-tailwind/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import Socialmedia from '../other/Socialmedia';
 
 function NavList() {
   const handleSmoothScroll = (sectionId) => {
@@ -85,7 +79,13 @@ export function NavbarSimple() {
   }, []);
 
   return (
-    <Navbar className='fixed top-0 left-0 right-0 z-50 mx-auto max-w-screen-3xl px-40 py-4 bg-gradient-to-r from-[rgba(255,245,0,0.1)0%] via-[rgba(111,244,75,0.1)68%] to-[rgba(0,255,133,0.1)100%] rounded-t-none rounded-b-none border-0'>
+    <Navbar
+      className='fixed top-0 left-0 right-0 z-50 max-w-screen-3xl 
+    md:px-36 md:py-4 
+    lg:px-40 lg:py-4 
+    bg-gradient-to-r from-[rgba(255,245,0,0.1)0%] via-[rgba(111,244,75,0.1)68%] to-[rgba(0,255,133,0.1)100%] 
+    rounded-t-none rounded-b-none border-0'
+    >
       <div className='flex items-center justify-between text-blue-gray-900'>
         {/* Logo */}
         <div className='flex items-center'>
@@ -113,61 +113,14 @@ export function NavbarSimple() {
             <Bars3Icon className='h-6 w-6' strokeWidth={2} />
           )}
         </IconButton>
-        <div className='flex flex-row gap-5'>
-          <a
-            href='https://www.instagram.com/nipuna__deshan/'
-            // as='a' //behave as a hyperlink
-            target='_blank' // Opens the link in a new tab
-            rel='noopener noreferrer' // Ensures security when opening new tabs
-            className='opacity-60 transition-opacity hover:opacity-100 cursor-pointer'
-          >
-            <FontAwesomeIcon
-              icon={faInstagram}
-              size='lg'
-              style={{
-                color: '#000000',
-                // borderRadius: '50%',
-                // border: '2px solid #000000',
-                // padding: '5px',
-              }}
-            />
-          </a>
-          <a
-            href='https://www.linkedin.com/in/nipuna-deshan-113a10285/'
-            as='a' //behave as a hyperlink
-            target='_blank' // Opens the link in a new tab
-            rel='noopener noreferrer' // Ensures security when opening new tabs
-            className='opacity-50 transition-opacity hover:opacity-100 cursor-pointer'
-          >
-            {/* <FontAwesomeIcon
-              icon={faLinkedin}
-              size='lg'
-              style={{ color: '#000000' }}
-            /> */}
-            <FontAwesomeIcon
-              icon={faLinkedinIn}
-              size='lg'
-              style={{ color: '#000000' }}
-            />
-          </a>
-          <a
-            as='a'
-            href='https://wa.me/+94776552898'
-            target='_blank'
-            rel='noopener noreferrer'
-            className='opacity-60 transition-opacity hover:opacity-100 cursor-pointer'
-          >
-            <FontAwesomeIcon
-              icon={faWhatsapp}
-              size='lg'
-              style={{ color: '#000000' }}
-            />
-          </a>
+        <div className='hidden lg:block'>
+          <Socialmedia />
         </div>
       </div>
       {/* Mobile Menu */}
       <Collapse open={openNav}>
         <NavList />
+        <Socialmedia />
       </Collapse>
     </Navbar>
   );

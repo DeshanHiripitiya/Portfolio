@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Frontend } from '../card/services/Frontend';
 import { Backend } from '../card/services/Backend';
 import { Database } from '../card/services/Database';
@@ -15,7 +15,12 @@ function Services() {
           <p className='text-xl font-semibold text-[#0E4DA4]'>WHAT I PROVIDE</p>
           <p className='text-4xl font-bold text-[#222222] mt-12'>My Services</p>
         </div>
-        <div className='flex flex-row items-center justify-center gap-6 mt-14'>
+        <div
+          className='flex flex-col space-y-4 mt-14 
+md:grid md:grid-cols-2 md:gap-6 md:space-y-0 
+lg:flex-row lg:space-x-6
+items-center justify-center'
+        >
           <div>
             <Design />
           </div>
@@ -34,4 +39,4 @@ function Services() {
   );
 }
 
-export default Services
+export default Services;

@@ -16,14 +16,15 @@ export function ContactMeButton({ projectsRef, contactRef }) {
     }
   };
 
-  const font = 'normal-case text-lg font-poppins font-light px-10 py-2';
+  const font = 'normal-case font-poppins font-light px-10 py-2 text-sm lg:text-lg';
 
   return (
     <div className='flex items-center gap-8'>
       <Button
         onClick={() => scrollToSection(contactRef)} // Scroll to "Contact" section
         variant='filled'
-        className={`rounded-full ${font} bg-[#0E4DA4] text-white border-2 border-transparent hover:bg-transparent hover:border-[#0E4DA4] hover:text-[#0E4DA4] transition-colors duration-700`}
+        className={`rounded-full ${font} bg-[#0E4DA4] text-white border-2 border-transparent 
+        hover:bg-transparent hover:border-[#0E4DA4] hover:text-[#0E4DA4] transition-colors duration-700`}
       >
         Contact Me
       </Button>

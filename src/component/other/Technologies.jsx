@@ -19,8 +19,11 @@ import Git from './technology/Git';
 
 function Technologies() {
   return (
-    <div className='mt-20'>
-      <div className='flex item-center justify-center gap-4'>
+    <div className='mt-20 flex justify-center'>
+      <div
+        className='grid grid-cols-1 gap-4 justify-items-center
+                      sm:grid-cols-4 md:grid-cols-7 lg:grid-cols-10'
+      >
         <Ract />
         <Node />
         <Express />
@@ -31,8 +34,6 @@ function Technologies() {
         <Js />
         <Mssql />
         <Sql />
-      </div>
-      <div className='flex item-center justify-center gap-4 mt-10'>
         <C />
         <Css />
         <Html />
