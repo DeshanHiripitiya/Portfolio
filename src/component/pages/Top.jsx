@@ -38,7 +38,7 @@ function Top({ projectsRef, contactRef }) {
             />
           </div>
         </div>
-        <div className='flex items-center'>
+        <div className='hidden md:block lg:block flex items-center'>
           <img
             src={require('../../assests/my_photo.png')}
             alt='Logo'

@@ -21,8 +21,8 @@ function Technologies() {
   return (
     <div className='mt-20 flex justify-center'>
       <div
-        className='grid grid-cols-1 gap-4 justify-items-center
-                      sm:grid-cols-4 md:grid-cols-7 lg:grid-cols-10'
+        className='flex flex-wrap justify-center items-center gap-4
+                      sm:w-3/4 md:w-4/5 lg:w-full'
       >
         <Ract />
         <Node />
