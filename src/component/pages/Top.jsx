@@ -27,8 +27,6 @@ function Top({ projectsRef, contactRef }) {
               I think curiosity is the cart to knowledge, and friendship
               <br /> makes the journey easier, turning it into a shared
               adventure.
-              {/* Driven by collaboration and growth, I innovate, adapt,
-              <br /> and aim to make a positive impact. */}
             </p>
           </div>
           <div className='mt-6 lg:mt-16'>

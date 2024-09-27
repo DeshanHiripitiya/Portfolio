@@ -5,12 +5,16 @@ function AboutMe() {
   return (
     <div id='about' className='py-12 mt-36'>
       <div className='flex flex-col items-center justify-center'>
-        <div className='font-poppins text-4xl font-semibold text-[#010035] '>
+        <div
+          className='font-poppins font-semibold text-[#010035] text-2xl
+        md:text-3xl
+        lg:text-4xl'
+        >
           A Little Bit About Me
         </div>
         <div
-          className='font-poppins text-xl font-normal mt-12 text-justify mx-10
-        lg:mx-96'
+          className='font-poppins font-normal mt-12 text-justify text-base mx-10 md:mx-24
+        lg:mx-96 md:text-xl'
         >
           With a passion for discovery and collaboration, I approach every
           project with dedication. My background at the University of Moratuwa’s
@@ -24,7 +28,8 @@ function AboutMe() {
           meaningful strides in my field, turning every project into an
           innovation and success.
         </div>
-        <div className='hidden md:block mt-14 pl-80'>
+        <div className='mt-14 
+        md:pl-80'>
           <img
             src={require('../../assests/signature 1.png')}
             alt='sig1'
