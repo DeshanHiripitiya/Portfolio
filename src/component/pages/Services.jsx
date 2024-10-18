@@ -12,8 +12,17 @@ function Services() {
     >
       <div className='flex flex-col items-center justify-center font-poppins'>
         <div className='flex flex-col items-center justify-center'>
-          <p className='text-xl font-semibold text-[#0E4DA4]'>WHAT I PROVIDE</p>
-          <p className='text-4xl font-bold text-[#222222] mt-12'>My Services</p>
+          <p className='text-base md:text-xl font-semibold text-[#0E4DA4]'>
+            WHAT I PROVIDE
+          </p>
+          <p
+            className='font-bold text-[#222222] mt-[2rem]
+          text-2xl
+        md:text-3xl
+        lg:text-4xl'
+          >
+            My Services
+          </p>
         </div>
         <div
           className='flex flex-col space-y-4 mt-14 

@@ -23,7 +23,12 @@ export function ProjectTabs() {
       label: 'Software',
       value: 'software',
       component: (
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
+        <div
+          className='grid grid-cols-1 gap-10 
+        sm:mx-[5rem]
+        md:grid-cols-2 
+        lg:grid-cols-3 '
+        >
           <Sms />
           <WordQuest />
           <DevConnector />
@@ -35,7 +40,12 @@ export function ProjectTabs() {
       label: 'UI/UX',
       value: 'uiux',
       component: (
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
+        <div
+          className='grid grid-cols-1 gap-10 
+        sm:mx-[5rem]
+        md:grid-cols-2 
+        lg:grid-cols-3 '
+        >
           <Smsui />
           <Portfolioui />
         </div>
@@ -45,7 +55,12 @@ export function ProjectTabs() {
       label: 'Hardware',
       value: 'hardware',
       component: (
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
+        <div
+          className='grid grid-cols-1 gap-10 
+        sm:mx-[5rem]
+        md:grid-cols-2 
+        lg:grid-cols-3 '
+        >
           <Hardware />
           {/* <Hardware /> */}
         </div>
@@ -56,7 +71,8 @@ export function ProjectTabs() {
   return (
     <Tabs value='software' className=''>
       <TabsHeader
-        className='bg-transparent max-w-[40rem] mx-auto' // Set max width and center it
+        className='bg-transparent mx-auto max-w-[20rem]
+        sm:max-w-[30rem]'
         indicatorProps={{
           className: 'bg-[#0E4DA4] shadow-none rounded-full',
         }}

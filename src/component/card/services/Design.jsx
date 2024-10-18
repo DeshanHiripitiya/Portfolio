@@ -9,7 +9,7 @@ import {
 
 export function Design() {
   return (
-    <Card className='mt-6 w-80 h-[330px]'>
+    <Card className='mt-6 w-[20rem] h-[330px]'>
       <CardBody className='p-10 text-center'>
         <Typography
           variant='h5'
