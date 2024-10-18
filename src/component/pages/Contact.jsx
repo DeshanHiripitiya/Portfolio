@@ -79,7 +79,7 @@ import emailjs from '@emailjs/browser';
               <div>
                 <Typography
                   variant='small'
-                  className='mb-2 text-left font-medium !text-gray-900'
+                  className='mb-2 text-left font-medium'
                 >
                   First Name
                 </Typography>
@@ -100,7 +100,7 @@ import emailjs from '@emailjs/browser';
               <div>
                 <Typography
                   variant='small'
-                  className='mb-2 text-left font-medium !text-gray-900'
+                  className='mb-2 text-left font-medium'
                 >
                   Last Name
                 </Typography>
@@ -122,7 +122,7 @@ import emailjs from '@emailjs/browser';
             <div>
               <Typography
                 variant='small'
-                className='mb-2 text-left font-medium !text-gray-900'
+                className='mb-2 text-left font-medium'
               >
                 Your Email
               </Typography>
@@ -143,7 +143,7 @@ import emailjs from '@emailjs/browser';
             <div>
               <Typography
                 variant='small'
-                className='mb-2 text-left font-medium !text-gray-900'
+                className='mb-2 text-left font-medium'
               >
                 Your Message
               </Typography>

@@ -6,7 +6,8 @@ function AboutMe() {
     <div id='about' className='py-12 mt-36'>
       <div className='flex flex-col items-center justify-center'>
         <div
-          className='font-poppins font-semibold text-[#010035] text-2xl
+          className='font-poppins font-semibold text-[#010035] 
+          text-2xl
         md:text-3xl
         lg:text-4xl'
         >
@@ -29,17 +30,19 @@ function AboutMe() {
           meaningful strides in my field, turning every project into an
           innovation and success.
         </div>
-        <div className='mt-14 
-        md:pl-80'>
+        <div
+          className='mt-14 
+        pl-[9rem]'
+        >
           <img
             src={require('../../assests/signature 1.png')}
             alt='sig1'
-            className='h-10'
+            className='h-8 md:h-10'
           />
           <img
             src={require('../../assests/signature 2.2.png')}
             alt='sig2'
-            className='pl-28 h-8'
+            className='pl-[6rem] h-6 md:h-8'
           />
         </div>
       </div>

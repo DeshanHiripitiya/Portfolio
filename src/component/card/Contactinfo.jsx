@@ -62,7 +62,7 @@ export function Contactinfo() {
                 style={{ color: '#000000' }}
               />
             </span>
-            <span className='ml-4 text-black'>nipunadeshahp@gmail.com</span>
+            <span className='ml-4 text-black'>nipunadeshanhp@gmail.com</span>
           </div>
 
           {/* Address */}
