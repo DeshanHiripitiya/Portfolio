@@ -18,7 +18,7 @@ function Services() {
         <div
           className='flex flex-col space-y-4 mt-14 
 md:grid md:grid-cols-2 md:gap-6 md:space-y-0 
-lg:flex-row lg:space-x-6
+lg:grid lg:grid-cols-4
 items-center justify-center'
         >
           <div>
