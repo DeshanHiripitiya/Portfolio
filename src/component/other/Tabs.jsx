@@ -12,6 +12,7 @@ import { DevConnector } from '../card/projects/DevConnector';
 import { WordQuest } from '../card/projects/Wordquest';
 import { Portfolio } from '../card/projects/Portfolio';
 import { Portfolioui } from '../card/projects/uiux/Portfolioui';
+import { Hardware } from '../card/projects/hardware/Hardware';
 
 export function ProjectTabs() {
   const [activeTab, setActiveTab] = React.useState('software');
@@ -22,7 +23,7 @@ export function ProjectTabs() {
       label: 'Software',
       value: 'software',
       component: (
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
           <Sms />
           <WordQuest />
           <DevConnector />
@@ -34,10 +35,9 @@ export function ProjectTabs() {
       label: 'UI/UX',
       value: 'uiux',
       component: (
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
           <Smsui />
           <Portfolioui />
-          
         </div>
       ),
     },
@@ -45,11 +45,9 @@ export function ProjectTabs() {
       label: 'Hardware',
       value: 'hardware',
       component: (
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10'>
-          <Smsui />
-          <WordQuest />
-          <DevConnector />
-          <Portfolio />
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10'>
+          <Hardware />
+          {/* <Hardware /> */}
         </div>
       ),
     },

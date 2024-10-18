@@ -22,7 +22,7 @@ function Technologies() {
     <div className='mt-20 flex justify-center'>
       <div
         className='flex flex-wrap justify-center items-center gap-4
-                      sm:w-3/4 md:w-4/5 lg:w-full'
+                      sm:w-3/4 md:w-4/5'
       >
         <Ract />
         <Node />
