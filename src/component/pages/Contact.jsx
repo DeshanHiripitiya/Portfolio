@@ -42,13 +42,15 @@ import emailjs from '@emailjs/browser';
       className='px-8 py-8 lg:py-16 bg-gradient-to-r from-[rgba(255,245,0,0.1)0%] via-[rgba(111,244,75,0.1)68%] to-[rgba(0,255,133,0.1)100%] py-12 mt-36'
     >
       <div className='container mx-auto text-center font-poppins'>
-        <Typography className='text-xl font-semibold text-[#0E4DA4] uppercase'>
+        <Typography className='text-base md:text-xl font-semibold text-[#0E4DA4] uppercase'>
           contact me
         </Typography>
         <Typography
           variant='h1'
           color='blue-gray'
-          className='text-4xl font-bold text-[#222222] mt-12'
+          className='text-2xl
+        md:text-3xl
+        lg:text-4xl font-bold text-[#222222] mt-12'
         >
           Have a Project Idea ? Let’s Talk
         </Typography>
