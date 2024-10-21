@@ -4,7 +4,6 @@ import { Contactinfo } from '../card/Contactinfo';
 import emailjs from '@emailjs/browser';
 
   const Contact = forwardRef((props, ref) => {
-  const contactRef = useRef(null);
   const form = useRef();
   const [loading, setLoading] = useState(false); // State for loading spinner
   const [success, setSuccess] = useState(false); // State for success message
