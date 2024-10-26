@@ -62,10 +62,13 @@ function Top({ projectsRef, contactRef }) {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 6 }}
-              className='font-normal font-poppins mt-6 text-base lg:text-lg'
+              className='font-normal font-poppins mt-6 text-base text-center lg:text-lg '
             >
-              I think curiosity is the cart to knowledge, and friendship <br />makes
-              the journey easier, turning it into a shared adventure.
+              I think curiosity is the cart to knowledge, and friendship
+              <span className='hidden md:inline lg:inline'>
+                <br />
+              </span>
+              makes the journey easier, turning it into a shared adventure.
             </motion.p>
           </div>
           <div className='mt-6 lg:mt-16'>
@@ -75,7 +78,7 @@ function Top({ projectsRef, contactRef }) {
             />
           </div>
         </div>
-        <div className='hidden md:block lg:block flex items-center'>
+        <div className='hidden md:block flex items-center'>
           <img
             src={require('../../assests/my_photo.png')}
             alt='Logo'
@@ -83,7 +86,7 @@ function Top({ projectsRef, contactRef }) {
           />
         </div>
       </div>
-        </div>
+    </div>
   );
 }
 

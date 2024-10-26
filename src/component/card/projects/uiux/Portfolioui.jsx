@@ -20,7 +20,8 @@ export function Portfolioui() {
         <Typography
           variant='h5'
           color='blue-gray'
-          className='font-poppins mb-2 cursor-pointer hover:text-blue-800'
+          className='font-poppins mb-2 cursor-pointer hover:text-blue-800 text-lg
+          lg:text-xl'
           as='a'
           href='https://www.figma.com/design/vEC2vNZ4Kk7vVMH8njQbc7/myPortfolio?node-id=0-1&node-type=canvas&t=hrXJ7fKUk4bpr1LE-0'
           target='_blank' // Opens the link in a new tab
@@ -29,9 +30,9 @@ export function Portfolioui() {
           Portfolio
         </Typography>
         <Typography className='font-poppins'>
-          Designed a user-friendly portfolio, focusing on ease of
-          development. The interface is intuitive and streamlined, facilitating
-          smooth implementation and enhancing user experience.
+          Designed a user-friendly portfolio, focusing on ease of development.
+          The interface is intuitive and streamlined, facilitating smooth
+          implementation and enhancing user experience.
           <br />
           <br />
           <span className='font-bold'>Tools :</span> Figma

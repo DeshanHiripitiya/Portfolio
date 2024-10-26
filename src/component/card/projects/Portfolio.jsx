@@ -23,7 +23,8 @@ export function Portfolio() {
         <Typography
           variant='h5'
           color='blue-gray'
-          className='font-poppins mb-2 cursor-pointer hover:text-blue-800'
+          className='font-poppins mb-2 cursor-pointer hover:text-blue-800 text-lg
+          lg:text-xl'
           as='a'
           href='https://github.com/DeshanHiripitiya/Portfolio' // GitHub link
           target='_blank' // Opens the link in a new tab

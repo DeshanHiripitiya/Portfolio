@@ -14,7 +14,7 @@ function AboutMe() {
           A Little Bit About Me
         </div>
         <div
-          className='font-poppins font-normal mt-12 text-justify text-base mx-10 
+          className='font-poppins font-normal mt-12 text-justify text-sm mx-10 
           md:mx-24
         lg:mx-96 md:text-xl'
         >
