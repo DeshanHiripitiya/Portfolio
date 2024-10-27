@@ -67,7 +67,7 @@ import emailjs from '@emailjs/browser';
           <Contactinfo />
           <form
             ref={form}
-            className='flex flex-col gap-4 lg:max-w-sm'
+            className='flex flex-col gap-4 lg:max-w-sm '
             onSubmit={sendEmail}
           >
             {/* <Typography
@@ -80,7 +80,7 @@ import emailjs from '@emailjs/browser';
               <div>
                 <Typography
                   variant='small'
-                  className='mb-2 text-left font-medium'
+                  className='mb-2 text-left font-medium font-poppins'
                 >
                   First Name
                 </Typography>
@@ -101,7 +101,7 @@ import emailjs from '@emailjs/browser';
               <div>
                 <Typography
                   variant='small'
-                  className='mb-2 text-left font-medium'
+                  className='mb-2 text-left font-medium font-poppins'
                 >
                   Last Name
                 </Typography>
@@ -123,7 +123,7 @@ import emailjs from '@emailjs/browser';
             <div>
               <Typography
                 variant='small'
-                className='mb-2 text-left font-medium'
+                className='mb-2 text-left font-medium font-poppins'
               >
                 Your Email
               </Typography>
@@ -144,7 +144,7 @@ import emailjs from '@emailjs/browser';
             <div>
               <Typography
                 variant='small'
-                className='mb-2 text-left font-medium'
+                className='mb-2 text-left font-medium font-poppins'
               >
                 Your Message
               </Typography>
@@ -163,7 +163,9 @@ import emailjs from '@emailjs/browser';
               />
             </div>
             <Button
-              className={`w-full ${success ? 'bg-green-500' : 'bg-[#0E4DA4]'}`}
+              className={`w-full ${
+                success ? 'bg-green-500' : 'bg-[#0E4DA4]'
+              } font-poppins`}
               type='submit'
               disabled={loading}
             >

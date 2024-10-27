@@ -20,7 +20,8 @@ export function Smsui() {
         <Typography
           variant='h5'
           color='blue-gray'
-          className='font-poppins mb-2 cursor-pointer hover:text-blue-800'
+          className='font-poppins mb-2 cursor-pointer hover:text-blue-800 text-lg
+          lg:text-xl'
           as='a'
           href='https://www.figma.com/design/swpprJciaLed2OZbeRi21Z/SMS-(studio-side)?node-id=143-114&node-type=frame&t=1jvxnEhim1bfqazp-0'
           target='_blank' // Opens the link in a new tab

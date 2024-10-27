@@ -14,7 +14,8 @@ export function Database() {
         <Typography
           variant='h5'
           color='blue-gray'
-          className='font-poppins mb-2'
+          className='font-poppins mb-2 text-lg
+          lg:text-xl'
         >
           Database Management
         </Typography>
