@@ -10,28 +10,37 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 export function Contactinfo() {
   return (
     <Card className='w-full h-full lg:max-h-[510px] bg-gradient-to-r from-[rgba(255,245,0,0.08)0%] to-[rgba(111,244,75,0.15)100%]'>
-      <CardBody className='p-14'>
-        <Typography variant='h5' color='black' className='font-poppins mb-8'>
+      <CardBody className='md:p-14'>
+        <Typography
+          variant='h5'
+          color='black'
+          className='font-poppins mb-8 text-xl'
+        >
           Contact Details
         </Typography>
-        <div className='space-y-5'>
+        <div className='space-y-3 md:space-y-5'>
           {/* Phone */}
           <div className='flex items-center'>
-            <span className='min-w-[30px]'>
+            <span className='ml-1'>
               <FontAwesomeIcon
                 icon={faPhone}
-                size='lg'
+                size='text-sm md:text-lg'
                 style={{ color: '#000000' }}
               />
             </span>
-            <span className='ml-4 text-black'>(+94) 776552898</span>
+            <span
+              className='ml-[1.7rem] text-black text-sm
+            md:text-base md:ml-[1.5rem]'
+            >
+              (+94) 776552898
+            </span>
           </div>
 
           {/* Whatsapp */}
           <div className='flex items-center'>
-            <span className='min-w-[30px] ml-1'>
+            <span className='ml-1'>
               <svg
-                className='h-6 w-6'
+                className='h-5 w-5 md:h-6 md:w-6'
                 // fill='currentColor'
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 448 512'
@@ -47,7 +56,8 @@ export function Contactinfo() {
               href='https://wa.me/+94776552898'
               target='_blank'
               rel='noopener noreferrer'
-              className='ml-4 text-black hover:underline'
+              className='md:ml-[1.1rem] text-black hover:underline text-sm
+            md:text-base ml-[1.4rem]'
             >
               Whatsapp (Same number)
             </a>
@@ -58,11 +68,16 @@ export function Contactinfo() {
             <span className='min-w-[30px]'>
               <FontAwesomeIcon
                 icon={faEnvelope}
-                size='lg'
+                size='text-sm md:text-xl'
                 style={{ color: '#000000' }}
               />
             </span>
-            <span className='ml-4 text-black'>nipunadeshanhp@gmail.com</span>
+            <span
+              className='ml-4 text-black text-sm
+            md:text-base'
+            >
+              nipunadeshanhp@gmail.com
+            </span>
           </div>
 
           {/* Address */}
@@ -70,11 +85,17 @@ export function Contactinfo() {
             <span className='min-w-[30px]'>
               <FontAwesomeIcon
                 icon={faHouse}
-                size='lg'
+                size='text-sm md:text-xl'
                 style={{ color: '#000000' }}
               />
             </span>
-            <span className='ml-4 text-black'>Katubedda, Moratuwa</span>
+            <span
+              className='ml-4 text-black text-sm
+            md:text-base
+            '
+            >
+              Katubedda, Moratuwa
+            </span>
           </div>
 
           {/* GitHub */}
@@ -82,7 +103,7 @@ export function Contactinfo() {
             <span className='min-w-[30px]'>
               <FontAwesomeIcon
                 icon={faGithub}
-                size='lg'
+                size='text-sm md:text-2xl'
                 style={{ color: '#000000' }}
               />
             </span>
@@ -90,7 +111,9 @@ export function Contactinfo() {
               href='https://github.com/DeshanHiripitiya'
               target='_blank'
               rel='noopener noreferrer'
-              className='ml-4 text-black hover:underline'
+              className='ml-4 text-black hover:underline text-sm
+            md:text-base
+            '
             >
               GitHub Profile
             </a>
@@ -101,7 +124,7 @@ export function Contactinfo() {
             <span className='min-w-[30px]'>
               <FontAwesomeIcon
                 icon={faLinkedin}
-                size='lg'
+                size='text-sm md:text-2xl'
                 style={{ color: '#000000' }}
               />
             </span>
@@ -109,7 +132,9 @@ export function Contactinfo() {
               href='https://www.linkedin.com/in/nipuna-deshan-113a10285/'
               target='_blank'
               rel='noopener noreferrer'
-              className='ml-4 text-black hover:underline'
+              className='ml-4 text-black hover:underline text-sm
+            md:text-base
+            '
             >
               LinkedIn Profile
             </a>

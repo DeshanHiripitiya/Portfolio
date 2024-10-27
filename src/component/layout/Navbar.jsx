@@ -81,8 +81,10 @@ export function NavbarSimple() {
   return (
     <Navbar
       className='fixed top-0 left-0 right-0 z-50 max-w-screen-3xl 
+    sm:px-28
     md:px-36 md:py-4 
-    lg:px-40 lg:py-4 
+    lg:px-20 lg:py-4 
+    xl:px-40 xl:py-4 
     bg-gradient-to-r from-[rgba(255,245,0,0.1)0%] via-[rgba(111,244,75,0.1)68%] to-[rgba(0,255,133,0.1)100%] 
     rounded-t-none rounded-b-none border-0'
     >

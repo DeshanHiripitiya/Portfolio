@@ -3,7 +3,9 @@ import React from 'react'
 function AboutMe() {
     
   return (
-    <div id='about' className='py-12 mt-36'>
+    <div id='about' className='py-12 mt-16
+    lg:mt-28
+    '>
       <div className='flex flex-col items-center justify-center'>
         <div
           className='font-poppins font-semibold text-[#010035] 
@@ -14,9 +16,10 @@ function AboutMe() {
           A Little Bit About Me
         </div>
         <div
-          className='font-poppins font-normal mt-12 text-justify text-sm mx-10 
+          className='font-poppins font-normal mt-10 text-justify text-sm mx-10 
           md:mx-24
-        lg:mx-96 md:text-xl'
+        lg:mx-30 lg:mt-14 md:text-xl
+        xl:mx-52'
         >
           With a passion for discovery and collaboration, I approach every
           project with dedication. My background at the University of Moratuwa’s
@@ -31,18 +34,22 @@ function AboutMe() {
           innovation and success.
         </div>
         <div
-          className='mt-14 
-        pl-[9rem]'
+          className='mt-[2rem] 
+        pl-[5rem]'
         >
           <img
             src={require('../../assests/signature 1.png')}
             alt='sig1'
-            className='h-8 md:h-10'
+            className='h-6 
+            sm:h-7
+            md:h-10'
           />
           <img
             src={require('../../assests/signature 2.2.png')}
             alt='sig2'
-            className='pl-[6rem] h-6 md:h-8'
+            className='pl-[4rem] md:pl-[6rem] h-4
+            sm:h-5
+            md:h-8'
           />
         </div>
       </div>

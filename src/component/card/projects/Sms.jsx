@@ -33,7 +33,7 @@ export function Sms() {
         >
           Studio Managment System
         </Typography>
-        <Typography className='font-poppins text-base'>
+        <Typography className='font-poppins'>
           Second-year software project managing studio interworks. I developed
           superadmin functionalities, handling both back end and front end.
           <br />
